@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+}
+
+.board{
+    display: grid;
+    grid-template-columns: repeat(3,0.2fr);
+    grid-template-rows: repeat(3,0.4fr);
+    width: 100%;
+    max-height: 80vh;
+    min-height: 80vh;
+    justify-content: center;
+   
+}
+
+button{
+    background-color: white;
+    font-size: xx-large;
+    min-width: 100px;
+}
+
+#one, #two, #three{
+    border-top: 0;
+}
+
+#one, #four,  #seven {
+    border-left: 0;
+}
+
+#three, #six,#nine{
+  border-right: 0;
+}
+
+#seven, #eight, #nine{
+  border-bottom: 0;
+}
+
+#id{
+    font-size: larger;
+}
