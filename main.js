@@ -10,6 +10,7 @@ let nine=document.querySelector('#nine')
 let buttons=document.querySelectorAll('button')
 let tb=document.querySelector('#tb')
 let winnerMessage=document.querySelector('#winner')
+let restart=document.querySelector('#restart')
 
 
 
@@ -70,11 +71,13 @@ let cplayer=playerOne;
    four.classList.contains('playerone') && five.classList.contains('playerone') && six.classList.contains('playerone') ||
    seven.classList.contains('playerone') && eight.classList.contains('playerone') && nine.classList.contains('playerone')){
      winnerMessage.innerText='player one won';
+     restart.innerText='reload to play again'
   }
   if(one.classList.contains('playertwo') && two.classList.contains('playertwo') && three.classList.contains('playertwo') || 
   four.classList.contains('playertwo') && five.classList.contains('playertwo') && six.classList.contains('playertwo') ||
   seven.classList.contains('playertwo') && eight.classList.contains('playertwo') && nine.classList.contains('playertwo')){
     winnerMessage.innerText='player two won';
+    restart.innerText='reload to play again'
  }
 
 //collums
@@ -83,12 +86,14 @@ let cplayer=playerOne;
  two.classList.contains('playerone') && five.classList.contains('playerone') && eight.classList.contains('playerone') ||
  three.classList.contains('playerone') && six.classList.contains('playerone') && nine.classList.contains('playerone')){
     winnerMessage.innerText='player one won';
+    restart.innerText='reload to play again'
 }
 
 if(one.classList.contains('playertwo') && four.classList.contains('playertwo') && seven.classList.contains('playertwo') || 
 two.classList.contains('playertwo') && five.classList.contains('playertwo') && eight.classList.contains('playertwo') ||
 three.classList.contains('playertwo') && six.classList.contains('playertwo') && nine.classList.contains('playertwo')){
   winnerMessage.innerText='player two won';
+  restart.innerText='reload to play again'
 }
 
 
@@ -97,12 +102,15 @@ three.classList.contains('playertwo') && six.classList.contains('playertwo') && 
 if(one.classList.contains('playerone') && five.classList.contains('playerone') && nine.classList.contains('playerone') || 
 three.classList.contains('playerone') && five.classList.contains('playerone') && seven.classList.contains('playerone')){
   winnerMessage.innerText='player one won';
+  restart.innerText='reload to play again'
 }
 
 
 if(one.classList.contains('playertwo') && five.classList.contains('playertwo') && nine.classList.contains('playertwo') || 
 three.classList.contains('playertwo') && five.classList.contains('playertwo') && seven.classList.contains('playertwo')){
-  winnerMessage.innerText='player two won';
+  winnerMessage.innerText='player two won'; 
+  restart.innerText='reload to play again'
+
 }
 
 
